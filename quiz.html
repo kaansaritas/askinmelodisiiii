@@ -1,0 +1,68 @@
+
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Canım Sevgilim 💖 Quiz</title>
+  <style>
+    body {
+      background-color: #fffafc;
+      font-family: 'Segoe UI', sans-serif;
+      text-align: center;
+      padding: 2rem;
+      color: #4a148c;
+    }
+    h2 {
+      color: #c2185b;
+    }
+    .question {
+      margin: 20px auto;
+      max-width: 600px;
+      padding: 20px;
+      background: #ffe4ec;
+      border-radius: 12px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    button {
+      margin: 10px;
+      padding: 10px 20px;
+      background-color: #f06292;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      font-size: 1rem;
+    }
+    button:hover {
+      background-color: #ec407a;
+    }
+    .result {
+      margin-top: 20px;
+      font-size: 1.2rem;
+      color: #d81b60;
+    }
+  </style>
+</head>
+<body>
+  <h2>Canım Sevgilim 💖 Küçük Bir Quiz</h2>
+  <div class="question">
+    <p>Sence seni en çok ne zaman sevdim?</p>
+    <button onclick="checkAnswer(true)">Her zaman 💖</button>
+    <button onclick="checkAnswer(false)">İlk görüşte 🌟</button>
+    <button onclick="checkAnswer(false)">Birlikte gülünce 😄</button>
+    <div class="result" id="result"></div>
+  </div>
+
+  <script>
+    function checkAnswer(correct) {
+      const result = document.getElementById("result");
+      if (correct) {
+        result.innerHTML = "Doğru cevap! Seni her zaman sevdim ve hep seveceğim 💕";
+      } else {
+        result.innerHTML = "Tatlı cevaptı ama bir düşün... her zaman sevdim seni ❤️";
+      }
+    }
+  </script>
+</body>
+</html>
